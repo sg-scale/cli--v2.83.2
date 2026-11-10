@@ -50,7 +50,7 @@ jobs:
         with:
           go-version-file: 'go.mod'
       - name: Install GoReleaser
-        uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a
+        uses: goreleaser/goreleaser-action@a4f02ab5355a589de60d917a659ce617ed19b3de
         with:
           version: "~1.17.1"
           install-only: true
@@ -103,7 +103,7 @@ jobs:
           security set-key-partition-list -S "apple-tool:,apple:,codesign:" -s -k "$keychain_password" "$keychain"
           rm "$RUNNER_TEMP/cert.p12"
       - name: Install GoReleaser
-        uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a
+        uses: goreleaser/goreleaser-action@a4f02ab5355a589de60d917a659ce617ed19b3de
         with:
           version: "~1.17.1"
           install-only: true
@@ -157,7 +157,7 @@ jobs:
         with:
           go-version-file: 'go.mod'
       - name: Install GoReleaser
-        uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a
+        uses: goreleaser/goreleaser-action@a4f02ab5355a589de60d917a659ce617ed19b3de
         with:
           version: "~1.17.1"
           install-only: true
